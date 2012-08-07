@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_openapps_mongoconfig_domain_ConfigItem" modelAttribute="configItem" path="/configitems" versionField="none" z="OOmNOzsuywuwFHoiirZ7JBSAOk4=">
+        <field:input field="name" id="c_org_openapps_mongoconfig_domain_ConfigItem_name" min="2" required="true" z="eyyHGiaFws/+6DPnPP20yje/NIg="/>
+        <field:input field="description" id="c_org_openapps_mongoconfig_domain_ConfigItem_description" z="uGN5tayS55dnnM+I1Y3BfUiqxoI="/>
+    </form:update>
+</div>

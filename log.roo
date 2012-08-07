@@ -1,0 +1,10 @@
+project --topLevelPackage org.openapps.mongoconfig
+mongo setup 
+entity mongo --class org.openapps.mongoconfig.domain.ConfigItem
+repository mongo --interface ~.repository.ConfigRepository --entity ~.domain.ConfigItem
+service --interface ~.service.ConfigItemService --entity ~.domain.ConfigItem
+field string --fieldName name --notNull --sizeMin 2
+field string --fieldName description
+field other --fieldName properties --type java.util.Map
+web mvc setup
+web mvc all --package ~.web
